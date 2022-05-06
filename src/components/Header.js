@@ -14,6 +14,7 @@ class Header extends Component {
           <li className="nav-item">Home</li>
           <li className="nav-item">About</li>
           <li className="nav-item">More</li>
+          <li className="nav-item">Contact Us</li>
         </ul>
       </div>
     );
