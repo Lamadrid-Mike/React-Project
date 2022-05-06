@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
+import "./Header.scss";
 
 class Header extends Component {
   constructor(props) {
@@ -8,13 +9,15 @@ class Header extends Component {
   }
   render() {
     return (
-      <>
+      <div>
         <ul className="nav">
-          <li className="nav-item"></li>
-          <li className="nav-item"></li>
-          <li className="nav-item"></li>
+          <li className="nav-item">Home</li>
+          <li className="nav-item">About</li>
+          <li className="nav-item">More</li>
         </ul>
-      </>
+      </div>
     );
   }
 }
+
+export default Header;
