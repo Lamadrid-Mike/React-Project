@@ -11,10 +11,14 @@ class Header extends Component {
     return (
       <div>
         <ul className="nav">
+          <li className="logo">Logo</li>
+          <li>
+            <input className="input"></input>
+          </li>
           <li className="nav-item">Home</li>
-          <li className="nav-item">About</li>
-          <li className="nav-item">More</li>
-          <li className="nav-item">Contact Us</li>
+          <li className="nav-item">Explore</li>
+          <li className="nav-item">Contact</li>
+          <li className="nav-item">Profile</li>
         </ul>
       </div>
     );

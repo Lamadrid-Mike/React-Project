@@ -1,17 +1,27 @@
-$header-text-color: aqua;
-
+$navbar-color: aqua;
+* {
+  margin: 0;
+}
 .nav {
   display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  background-color: black;
-  height: 2rem;
+  justify-content: space-around;
+  background-color: $navbar-color;
   list-style: none;
+  .logo {
+    color: black;
+    font-size: 1.5rem;
+    background-color: bisque;
+    margin-right: 1rem;
+  }
   .nav-item {
-    color: $header-text-color;
+    color: black;
     font-size: 1.1rem;
     :hover {
       background-color: yellow;
     }
+  }
+  .input {
+    border-style: none;
+    padding: 0.4rem;
   }
 }
