@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
+import Logo from "../img/logo.png";
 
 class Header extends Component {
   constructor(props) {
@@ -11,14 +12,10 @@ class Header extends Component {
     return (
       <div>
         <ul className="nav">
-          <li className="logo">Logo</li>
-          <li>
-            <input className="input"></input>
+          <li className="logo">
+            <img src={Logo} style={{ width: 90 }} />
           </li>
-          <li className="nav-item">Home</li>
-          <li className="nav-item">Explore</li>
-          <li className="nav-item">Contact</li>
-          <li className="nav-item">Profile</li>
+          <li>Explore The World!</li>
         </ul>
       </div>
     );
