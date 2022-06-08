@@ -7,15 +7,12 @@ $navbar-color: aqua;
   justify-content: space-around;
   background-color: $navbar-color;
   list-style: none;
-  .nav-item {
-    color: black;
-    font-size: 1.1rem;
-    :hover {
-      background-color: yellow;
-    }
-  }
   .logo {
     margin-right: 10px;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
   }
   .input {
     border-style: none;

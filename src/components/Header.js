@@ -1,6 +1,5 @@
 import React from "react";
 import { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import Logo from "../img/logo.png";
 
@@ -13,9 +12,9 @@ class Header extends Component {
       <div>
         <ul className="nav">
           <li className="logo">
-            <img src={Logo} style={{ width: 90 }} />
+            <img src={Logo} style={{ width: 100 }} />
           </li>
-          <li>Explore The World!</li>
+          <li className="title">Explore The World!</li>
         </ul>
       </div>
     );
