@@ -20,5 +20,8 @@ $navbar-color: aqua;
       border-bottom: 3px solid black;
       font-size: 1.1rem;
     }
+    li:hover {
+      cursor: pointer;
+    }
   }
 }
