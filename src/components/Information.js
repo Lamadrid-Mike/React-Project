@@ -20,7 +20,7 @@ class Information extends Component {
   }
 
   render() {
-    const hovered = this.state.isHovered ? <div>Hello World</div> : "";
+    const hovered = this.state.isHovered ? <div>Hello There!</div> : "";
     const listItem = this.state.beaches.map((item) => (
       <div
         key={item.id}
