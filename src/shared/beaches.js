@@ -23,4 +23,12 @@ export const BEACHES = [
       "More than 7,000 feet above sea level in the Andes Mountains, Machu Picchu is the most visited tourist destination in Peru. A symbol of the Incan Empire and built around 1450AD, Machu Picchu was designated a UNESCO World Heritage Site in 1983 and was named one of the New Seven Wonders of the World in 2007.",
     featured: true,
   },
+  {
+    id: 3,
+    name: "Cancun",
+    image: require("../img/cancunMexico.jpg"),
+    description:
+      "Cancún, a Mexican city on the Yucatán Peninsula bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife. It’s composed of 2 distinct areas: the more traditional downtown area, El Centro, and Zona Hotelera, a long, beachfront strip of high-rise hotels, nightclubs, shops and restaurants.",
+    feature: true,
+  },
 ];
