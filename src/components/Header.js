@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import "./Header.scss";
+import "./style.scss";
 import Logo from "../img/logo.png";
 import { Link } from "react-router-dom";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import { BEACHES } from "../shared/beaches";
-import "./Information.scss";
+import "./style.scss";
 
 class Information extends Component {
   constructor(props) {
