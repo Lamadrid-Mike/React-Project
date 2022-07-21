@@ -16,7 +16,7 @@ class Header extends Component {
             <img className="logo" src={Logo} style={{ width: 100 }} />
           </a>
           <ul>
-          <li>
+            <li>
               <a >Home</a>
             </li>
             <li>
