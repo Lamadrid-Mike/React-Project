@@ -1,16 +1,21 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Header from "./components/Header";
 import reportWebVitals from "./reportWebVitals";
-import Information from "./components/Information";
+import Header from "./components/Header";
+import Travel from "./components/Travel";
 import Footer from "./components/Footer";
+import Home from './components/Home';
+import 'font-awesome/css/font-awesome.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Header />
-    <Information />
+    <Travel />
     <Footer />
   </React.StrictMode>
 );
