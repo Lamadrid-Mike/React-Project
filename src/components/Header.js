@@ -17,22 +17,26 @@ class Header extends Component {
           </a>
           <ul>
             <li>
-              <a >Home</a>
+              <a href={"/home"}>
+                Home
+              </a>
             </li>
             <li>
               <a>Explore</a> {/*we need to make this a drop down menu*/}
             </li>
             <li>
-              <a></a>Travel
+              <a href={"/travel"}>
+                Travel
+              </a>
             </li>
             <li>
               <a>About</a>
             </li>
             <li>
-              <a></a>Blog
+              <a>Blog</a>
             </li>
             <li>
-              <a></a>More
+              <a>More</a>
             </li>
           </ul>
         </div>
