@@ -1,9 +1,8 @@
 /* We need to start using IDs for common things like lists, list items, cards, images 
-so that we don't change each other's code or override our past work */
+so that we don't change each other's code or override our past work, we also need to 
+keep id and class name on same scss tree so it wont catch other components*/
 
-
-/* HEADER */ 
-
+/* HEADER COMPONENT */
 $navbar-color: aqua;
 * {
   margin: 0;
@@ -26,56 +25,77 @@ $navbar-color: aqua;
       border-bottom: 3px solid black;
       font-size: 1.1rem;
     }
-    li:hover {
+    &:hover {
       cursor: pointer;
+      color: orange;
+      font-weight: bold;
     }
   }
 }
 
-/* FOOTER */ 
-
+/* FOOTER COMPONENT*/
 #footer {
-    background-image: linear-gradient(rgb(82, 75, 75), aqua);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 125px;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    font-family: "Open Sans", sans-serif;
-    border-bottom: none;
-  }
-  
-  li:hover {
-    color: orange;
-    font-weight: bold;
-  }
-  
-
-/* INFORMATION */ 
-
-.container {
+  background-color: aqua;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: none;
+  position: relative;
+  bottom: 0;
+  .logos {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
-    justify-content: space-around;
-    grid-gap: 5px;
-    margin: 5px;
-    flex-wrap: wrap;
-    .card {
-      text-align: center;
-      border: 1px solid aqua;
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      .image {
-        max-width: 400px;
-        min-width: 200px;
-        width: 100%;
-        height: auto;
-      }
+    justify-content: center;
+    gap: 1.5rem;
+    img {
+      width: 50px;
+      height: auto;
     }
   }
-  
-  .container:hover {
+  .links {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  .copyRights {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+/* HOME COMPONENT*/
+.container {
+  display: flex;
+  justify-content: space-around;
+  grid-gap: 5px;
+  margin: 5px;
+  flex-wrap: wrap;
+  .card {
+    text-align: center;
+    border: 1px solid aqua;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    .image {
+      max-width: 400px;
+      min-width: 200px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &:hover {
     cursor: pointer;
   }
-  
+}
