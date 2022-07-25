@@ -39,7 +39,7 @@ $navbar-color: aqua;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 40px;
   font-family: "Open Sans", sans-serif;
   border-bottom: none;
   position: relative;
@@ -66,14 +66,16 @@ $navbar-color: aqua;
     justify-content: center;
     gap: 1.5rem;
     list-style: none;
+    align-items: center;
   }
   .copyRights {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    text-align: center;
     font-size: 13px;
+    align-items: center;
+    text-align: center;
   }
 }
 
