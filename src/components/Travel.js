@@ -22,7 +22,6 @@ class Travel extends Component {
   }
 
   render() {
-    const hovered = this.state.isHovered ? <div>Hello There!</div> : "";
     const listItem = this.state.beaches.map((item) => (
       <div
         key={item.id}
@@ -32,7 +31,6 @@ class Travel extends Component {
       >
         <h3 style={{ color: "white" }}>{item.name}</h3>
         <img className="image" src={item.image} />
-        {hovered}
       </div>
     ));
     return <div className="container">{listItem}</div>;
