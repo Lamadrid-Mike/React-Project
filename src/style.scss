@@ -27,15 +27,14 @@ $navbar-color: aqua;
     }
     &:hover {
       cursor: pointer;
-      color: orange;
-      font-weight: bold;
+      text-shadow: 0.5px 0.5px;
     }
   }
 }
 
 /* FOOTER COMPONENT*/
 #footer {
-  background-color: aqua;
+  background-color: $navbar-color;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -68,6 +67,10 @@ $navbar-color: aqua;
     list-style: none;
     align-items: center;
   }
+  .links:hover {
+    cursor: pointer;
+    text-shadow: 0.5px 0.5px;
+  }
   .copyRights {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -79,8 +82,8 @@ $navbar-color: aqua;
   }
 }
 
-/* HOME COMPONENT*/
-.container {
+/* TRAVEL COMPONENT*/
+#travelpage {
   display: flex;
   justify-content: space-around;
   grid-gap: 5px;
@@ -88,7 +91,7 @@ $navbar-color: aqua;
   flex-wrap: wrap;
   .card {
     text-align: center;
-    border: 1px solid aqua;
+    border: 1px solid $navbar-color;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     .image {
       max-width: 400px;
@@ -100,4 +103,25 @@ $navbar-color: aqua;
   &:hover {
     cursor: pointer;
   }
+}
+
+/*HOME COMPONENT */
+
+#homepage {
+  display: flex;
+  justify-content: space-around;
+  grid-gap: 5px;
+  margin: 5px;
+  flex-wrap: wrap;
+  color: #FFF;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.homeHeader {
+  font-family: Helvetica Neue;
+  text-align: center;
 }

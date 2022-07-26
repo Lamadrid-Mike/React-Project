@@ -19,27 +19,3 @@ export function Main() {
 }  
 
 export default Main;
-
-
-// class Main extends Component {
-
-//     render() {  
-
-//         return (
-//             <div>
-//                 <Header />
-//                     <Routes>
-//                         <Route exact path='/home' element={Home} />
-//                         <Route path='/travel' element={Travel} render={() => <Travel /> } />
-//                         <Navigate to='/home' />
-//                     </Routes>
-//                 <Footer />
-//             </div>
-//         );
-//     }
-// }
-
-// export default Main;
-
-
-

@@ -1,21 +1,20 @@
 import React from "react";
 import "../style.scss";
+import { Card, CardImg, CardText, CardBody, CardTitle, RenderCard } from 'reactstrap';
 
-function Home() {
+function Home(props) {
   return (
-    <div className="container">
-      <h1>Home</h1>
-      <div className="row">
-        <div className="col-md m-1">
-          <p>Test 1</p>
-        </div>
-        <div className="col-md m-1">
-          <p>Test 2</p>
-        </div>
-        <div className="col-md m-1">
-          <p>Test 3</p>
-        </div>
-      </div>
+
+    <div className="container" id="homepage">
+        <div className="row">
+                <h1>Home</h1>
+            <div className="col">
+                Updates
+            </div>
+            <div className="col">
+                Features
+            </div>
+        </div>                                                  
     </div>
   );
 }

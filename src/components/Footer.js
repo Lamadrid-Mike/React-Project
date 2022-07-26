@@ -14,7 +14,7 @@ function Footer(props) {
           <img src={TwitterLogo} />
           <img src={InstaLogo} />
         </div>
-        <ul className="links">
+        <ul className="links" id="footerLinks">
           <li>
             <a>Meet Our Team</a>
           </li>

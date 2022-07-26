@@ -28,12 +28,12 @@ class Travel extends Component {
         className="card"
         onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHover}
-      >
+        >
         <h3 style={{ color: "white" }}>{item.name}</h3>
         <img className="image" src={item.image} />
       </div>
     ));
-    return <div className="container">{listItem}</div>;
+    return <div className="container" id="travelpage">{listItem}</div>;
   }
 }
 
